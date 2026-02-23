@@ -2,6 +2,7 @@ import Image from "next/image";
 import NavigationBar from "./Components/Navigation";
 import HowScamraderWorksList from "./Components/HowScamraderWorksList";
 import WhatYouCanDoList from "./Components/WhatYouCanDoList";
+import UseCase from "./Components/UseCase"
 
 export default function Home() {
   return (
@@ -128,6 +129,35 @@ export default function Home() {
                 <button className="w-[169px] h-[52px] rounded-[16px] text-[#fff] bg-[#0D1117] cursor-pointer">Verify account</button>
             </div>
       </section>
+      </section>
+
+      {/* real life use case */}
+      <section className="bg-[#FBFEFF] py-[120px]">
+         <h2 className="font-[600] font-clash leading-[1.5] tracking-[-0.02] text-[48px] text-[#0D1126] text-center">What you can do.</h2>
+        <p className="font-[600] font-clash leading-[1.5] tracking-[-0.02] text-[18px] text-[#0D1126] text-center">There are different scenarios</p>
+        <section className="max-w-[1280px] mt-[100px] mx-auto flex space-x-[23px]">
+          <UseCase
+            bgImage="bg-[url('/img/usecase1.png')]"
+            text1="Someone DM'd me about an investment."
+            text2="Our advice: Verify the business first  before responding."
+            btnText="Verify business"
+          />
+
+          <UseCase
+            bgImage="bg-[url('/img/usecase2.png')]"
+            text1="I just got scammed/I already got scammed."
+            text2="Our advice: Report it to protect the next person"
+            btnText="Report a scam"
+          />
+
+          <UseCase
+            bgImage="bg-[url('/img/usecase3.png')]"
+            text1="I made an online purchase and I'm about to pay a vendor."
+            text2="Our advice: Verify the account first - personal or business."
+            btnText="Verify account"
+          />
+
+        </section>
       </section>
 
 
