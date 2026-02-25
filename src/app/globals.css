@@ -11,6 +11,6 @@
   --color-secondaryColor: #354764;
   --color-primaryTextColor: #0A1A18; */
   --font-clash: var(--font-clash);
-  /* --font-clash: var(--font-outfit); */
+  --font-outfit: var(--font-outfit);
 }
 

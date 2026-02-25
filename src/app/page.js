@@ -190,6 +190,22 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="max-w-[1280px] mx-auto rounded-[24px] p-[60px] my-[80px] bg-[#1C2532] flex justify-between items-center">
+        <div className="space-y-[16px]">
+          <h3 className="text-[#fff] font-clash font-[600] text-[48px] leading-none">We don't guess. We verify</h3>
+          <div className="text-[#F5F5F5] text-[18px]">
+          <p>Scammers rely on silence. We rely on community.</p>
+           <p>Be part of the system that stops scams.</p>
+           </div>
+        </div>
+
+        <div className="flex space-x-[12px] text-[16px] font-[700] leading-none">
+                <button className="w-[169px] h-[52px] rounded-[16px] text-[#fff] bg-transparent border border-[#BABDC1] cursor-pointer">Report a scam</button>
+                <button className="w-[169px] h-[52px] rounded-[16px] text-[#0D1117] bg-[#fff] cursor-pointer">Verify account</button>
+             </div>
+      </section>
+
+
 
     </main>
   );

@@ -2,6 +2,7 @@ import {Outfit} from "next/font/google";
 import localFont from "next/font/local"
 import "./globals.css";
 import { AllContextProvider } from "./context/allcontext";
+import Footer from "./Components/Footer";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -44,6 +45,7 @@ export default function RootLayout({ children }) {
       >
         <AllContextProvider>
         {children}
+        <Footer />
         </AllContextProvider>
       </body>
     </html>
