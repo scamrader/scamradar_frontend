@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const HighRiskContent = ({setIsOpen}) => {
+const MediumRiskContent = ({setIsOpen}) => {
     return(
             <div className="w-full h-full p-[40px] space-y-[16px] text-[#4C545F]">
                 <div className="flex justify-between items-center">
@@ -36,20 +36,17 @@ const HighRiskContent = ({setIsOpen}) => {
 
                     <div className="flex justify-between items-center text-[14px] leading-none pt-[8px]">
                         <span>No of community reports:</span>
-                        <div className="w-[24px] h-[24px] bg-[#FF5A5A] rounded-full flex items-center justify-center text-[#fff] text-[14px] ">6</div>
+                        <div className="w-[24px] h-[24px] bg-[#FF8D28] rounded-full flex items-center justify-center text-[#fff] text-[14px] ">1</div>
                     </div>
 
                      <div className="flex justify-between items-center text-[14px] leading-none pt-[8px]">
                         <span>Reported for:</span>
                         <div className="flex space-x-[11px]">
-                            <div className="py-[4px] px-[8px] flex items-center space-x-[7px] text-[14px] rounded-[8px] border-[0.5px] border-[#FF5A5A]">
+                            <div className="py-[4px] px-[8px] flex items-center space-x-[7px] text-[14px] rounded-[8px] border-[0.5px] border-[#FF8D28]">
                                 <span className="text-[#000]">Fake goods</span>
-                                <span className="text-[#FF5A5A]">3</span>
+                                <span className="text-[#FF8D28]">1</span>
                             </div>
-                            <div className="py-[4px] px-[8px] flex items-center space-x-[7px] text-[14px] rounded-[8px] border-[0.5px] border-[#FF5A5A]">
-                                <span className="text-[#000]">Investment scam</span>
-                                <span className="text-[#FF5A5A]">3</span>
-                            </div>
+                           
                         </div>
                     </div>
 
@@ -61,19 +58,19 @@ const HighRiskContent = ({setIsOpen}) => {
                     </div>
                 </div>
 
-                <div className="bg-[#FFFAFB] p-[16px] rounded-[16px] border border-[#FF5A5A]">
+                <div className="bg-[#FFFAF6] p-[16px] rounded-[16px] border border-[#FF8D28]">
                     <div className="flex space-x-[8px] items-center">
                         <div className="relative w-[24px] h-[24px]">
-                            <Image src="/img/forbidden.png" fill alt="verify scamrader"/>
+                            <Image src="/img/danger.png" fill alt="verify scamrader"/>
                         </div>
-                        <span className="text-[#FF5A5A] font-[600] text-[14px]">Do not send money</span>
+                        <span className="text-[#FF871C] font-[600] text-[14px]">Medium risk</span>
                     </div>
                     <p className="leading-[1.5] text-[14px]">This account has received multiple reports and is considered high risk. Do not send money.</p>
                 </div>
 
                 <div className="flex space-x-[12px] pt-[8px]">
-                    <button className="cursor-pointer h-[52px] w-[50%] border border-[#BABDC1] outline-none rounded-[16px] text-[#0D1117] font-[700]">Report this account</button>
-                    <button className="cursor-pointer h-[52px] w-[50%] bg-[#0D1117] outline-none rounded-[16px] text-[#FFFFFF] font-[700]">Share warning</button>
+                    <button className="cursor-pointer h-[52px] w-[50%] border border-[#BABDC1] outline-none rounded-[16px] text-[#0D1117] font-[700]">Block account</button>
+                    <button className="cursor-pointer h-[52px] w-[50%] bg-[#0D1117] outline-none rounded-[16px] text-[#FFFFFF] font-[700]">Report this account</button>
                 </div>
 
                 <p className="text-[14px]">
@@ -84,4 +81,4 @@ const HighRiskContent = ({setIsOpen}) => {
     )
 }
 
-export default HighRiskContent;
+export default MediumRiskContent;

@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-const LowRiskContent = () => {
+const LowRiskContent = ({setIsOpen}) => {
     return(
             <div className="w-full h-full p-[40px] space-y-[16px] text-[#4C545F]">
                 <div className="flex justify-between items-center">
                     <span className="font-[600] leading-none text-[18px] text-[#1F2937]">Search result</span>
-                    <div className="w-[20px] h-[20px] relative cursor-pointer">
+                    <div onClick={() => setIsOpen(false)} className="w-[20px] h-[20px] relative cursor-pointer">
                     <Image src="/img/close-square.png" fill alt="close modal" />
                     </div>
                 </div>

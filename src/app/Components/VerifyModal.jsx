@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react"
 import LowRiskContent from "./LowRiskContent";
 import HighRiskContent from "./HighRiskContent";
+import MediumRiskContent from "./MediumRiskContent";
 
 const VerifyAccountModal = ({ isOpen, setIsOpen }) => {
     const [loading, setLoading] = useState(true);
@@ -55,8 +56,9 @@ const VerifyAccountModal = ({ isOpen, setIsOpen }) => {
             </div> 
             
             :
-            // <LowRiskContent />
-            <HighRiskContent />
+            // <LowRiskContent setIsOpen={setIsOpen} />
+            // <HighRiskContent setIsOpen={setIsOpen} />
+            <MediumRiskContent setIsOpen={setIsOpen} />
         }
       
       </div>
