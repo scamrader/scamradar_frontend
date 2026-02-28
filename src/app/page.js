@@ -1,34 +1,19 @@
+"use client"
+
+import { useState } from "react";
 import Image from "next/image";
 import NavigationBar from "./Components/Navigation";
 import HowScamraderWorksList from "./Components/HowScamraderWorksList";
 import WhatYouCanDoList from "./Components/WhatYouCanDoList";
 import UseCase from "./Components/UseCase"
-// import FaqList from "./Components/FaqList";
 import FaqContainer from "./Components/FaqContainer";
+import VerifyAccountModal from "./Components/VerifyModal";
 
 export default function Home() {
-  const faqList = [
-  {
-    question: "How does Scamrader determine risk levels?",
-    ans: "How does Scamrader determine risk levels?"
-  },
-  {
-    question: "Does “No reports found” mean the account is safe?",
-    ans: "Does “No reports found” mean the account is safe?"
-  },
-    {
-    question: "Can I trust the reports on Scamrader?",
-    ans: "Can I trust the reports on Scamrader?"
-  },
-   {
-    question: "What happens when I report an account?",
-    ans: "What happens when I report an account?"
-  }
-]
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <main>
       <NavigationBar />
-      
       <section className="max-w-[1280px] mx-auto pt-[90px] pb-[40px]">
         <div className="font-clash">
           <h1 className="font-[600] text-[80px] leading-[1.5] tracking-[-0.02em]">Don&rsquo;t get scammed.</h1>
@@ -39,9 +24,13 @@ export default function Home() {
           <p className="text-[18px] max-w-[432px] font-[400]">
             Check any account before sending money or making payments, report scams, and protect yourself in seconds.
           </p>
-          <div className="h-[52px] max-w-[547px] bg-[#ECECF9] rounded-[16px]">
-
+          <div className="h-[52px] max-w-[432px] bg-[#ECECF9] rounded-[16px] relative">
+            <input type="text" placeholder="Enter account number" className="pl-[10px] pr-[112px] w-full h-[52px] rounded-[16px] outline-none bg-[#fff]" />
+          <button onClick={() => setIsOpen(true)} className="font-[700] leading-none text-[#FFFFFF] rounded-[16px] w-[110px] h-[52px] outline-none absolute top-0 right-0 bg-[#0D1117] border border-[#BABDC1] cursor-pointer">
+            Verify
+          </button>
           </div>
+          <VerifyAccountModal isOpen={isOpen} setIsOpen={setIsOpen} />
           <p className="text-[18px] max-w-[432px] font-[400]">
             Scammers move fast. We move faster.
           </p>
