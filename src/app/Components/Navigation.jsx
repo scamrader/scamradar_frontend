@@ -52,7 +52,7 @@ const NavigationBar = () => {
 
                 <Link href="/#">How it works</Link>
 
-                <Link href="/#">FAQ</Link>
+                <Link href="/Faq">FAQ</Link>
              </div>
 
              <div className="flex space-x-[12px] text-[16px] font-[700] leading-none">

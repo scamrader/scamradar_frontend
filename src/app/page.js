@@ -3,10 +3,12 @@ import NavigationBar from "./Components/Navigation";
 import HowScamraderWorksList from "./Components/HowScamraderWorksList";
 import WhatYouCanDoList from "./Components/WhatYouCanDoList";
 import UseCase from "./Components/UseCase"
-import FaqBlock from "./Components/FaqBlock";
+// import FaqList from "./Components/FaqList";
+import FaqContainer from "./Components/FaqContainer";
 
 export default function Home() {
-  const faqList = [{
+  const faqList = [
+  {
     question: "How does Scamrader determine risk levels?",
     ans: "How does Scamrader determine risk levels?"
   },
@@ -182,9 +184,10 @@ export default function Home() {
       <section className="py-[120px] space-y-[40px] max-w-[800px] mx-auto">
         <h2 className="text-center font-clash font-[600] leading-none text-[40px] text-[#0D1126]">Frequently Asked Questions (FAQ)</h2>
        
-        {
+        {/* {
           faqList.map((list, i) => <div key={i}> <FaqBlock questions={list.question}  /></div>)
-        }
+        } */}
+        <FaqContainer />
         <div className="text-center">
         <button className="w-[143px] h-[52px] rounded-[16px] text-[#0D1117] border border-[#BABDC1] cursor-pointer mx-auto">View more</button>
         </div>
@@ -204,8 +207,6 @@ export default function Home() {
                 <button className="w-[169px] h-[52px] rounded-[16px] text-[#0D1117] bg-[#fff] cursor-pointer">Verify account</button>
              </div>
       </section>
-
-
 
     </main>
   );
