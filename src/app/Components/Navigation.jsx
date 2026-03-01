@@ -56,7 +56,9 @@ const NavigationBar = () => {
              </div>
 
              <div className="flex space-x-[12px] text-[16px] font-[700] leading-none">
+               <Link href="/signup" className="">  
                 <button className="w-[169px] h-[52px] rounded-[16px] text-[#0D1117] border border-[#BABDC1] cursor-pointer">Report a scam</button>
+                </Link>
                 <button className="w-[169px] h-[52px] rounded-[16px] text-[#fff] bg-[#0D1117] cursor-pointer">Verify account</button>
              </div>
 

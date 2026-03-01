@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
       >
         <AllContextProvider>
         {children}
-        <Footer />
+        {/* <Footer /> */}
         </AllContextProvider>
       </body>
     </html>
