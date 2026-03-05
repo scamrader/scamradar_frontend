@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ReportLayout({ children }) {
   return (
-    <main className="w-[1280px] mx-auto pt-[40px]">
+    <main className="w-[1280px] mx-auto pt-[40px] pb-[90px]">
         <div className="flex justify-between items-center">
         <div className="w-[200px] h-[51px] relative">
         <Image src="/logo.png" alt="scamrader logo" fill />
@@ -17,7 +17,7 @@ export default function ReportLayout({ children }) {
         </div>
         </div>
         <div className="p-[40px]">
-            <span className="text-[#000] font-[700]">Back</span>
+            <span className="text-[#000] font-[700] cursor-pointer">Back</span>
         </div>
 
         <div className="w-[600px] p-[24px] border border-[#DFDFDF] mx-auto rounded-[24px]">
