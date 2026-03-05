@@ -1,12 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ReportLayout() {
   return (
     <main className="w-[1280px] mx-auto pt-[40px] pb-[90px]">
         <div className="flex justify-between items-center">
+        <Link href="/">
         <div className="w-[200px] h-[51px] relative">
         <Image src="/logo.png" alt="scamrader logo" fill />
         </div>
+        </Link>
 
         <div className="flex space-x-[12px] items-center">
             <div className="w-[32px] h-[32px] rounded-full bg-[#D9D9D9]"></div>
