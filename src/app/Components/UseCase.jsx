@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const UseCase = ({bgImage, text1, text2, btnText}) => {
     return(
-    <div className={`text-[#000] relative w-[411px] h-[482px] rounded-[24px] ${bgImage} bg-cover bg-center`}>
+    <div className={`text-[#000] border border-[#DFDFDF] relative lg:w-[411px] h-[482px] rounded-[24px] ${bgImage} bg-cover bg-center`}>
             <div className="absolute bottom-0 left-0 w-full h-[240px] bg-[#fff] rounded-[24px] p-[24px]">
                 <div className="flex space-x-[12px] items-center">
                     <div className="w-[40px] h-[40px] bg-[#D6F2FF] rounded-[8px] flex items-center justify-center">

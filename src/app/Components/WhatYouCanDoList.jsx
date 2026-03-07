@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WhatYouCanDoList = ({icon, background, title, text}) => {
     return(
-        <div className={`w-[410px] h-[377px] rounded-[24px] p-[40px] ${background}`}>
+        <div className={`w-full lg:w-[410px] h-[282px] lg:h-[377px] rounded-[24px] p-[24px] lg:p-[40px] ${background}`}>
             <div className="border border-[#989DA3] w-[80px] h-[80px] rounded-[40px] flex items-center justify-center">
                 <div className="relative w-[40px] h-[40px]">
                      <Image
@@ -14,7 +14,7 @@ const WhatYouCanDoList = ({icon, background, title, text}) => {
                 </div>
             </div>
 
-            <div className="mt-[120px] space-y-[24px]">
+            <div className="mt-[60px] lg:mt-[120px] space-y-[24px]">
                     <h3 className="font-[600] font-clash text-[20px] leading-none text-[#1C2532]">{title}</h3>
                     <p className="leading-[1.5]">{text}</p>
 
