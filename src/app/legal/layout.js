@@ -1,11 +1,10 @@
-
 import NavigationBar from "../Components/navigation2";
 import MobileNavigationBar from "../Components/MobileNav";
-import Image from "next/image";
+
 
 export const metadata = {
-  title: "Thribe Community Legal documents - Tech Community in Africa",
-  description: "Thribe community Terms and Conditions",
+  title: "Scamrader Legal documents",
+  description: "Scamrader Terms and Conditions",
 };
 
 export default function RootLayout({ children }) {
