@@ -5,14 +5,13 @@ import Link from "next/link";
 import Button from "./Button";
 import { useAllContext } from "../context/allcontext";
 import { usePathname } from "next/navigation";
+import { Menu } from "lucide-react";
 
 const NavigationBar = () => {
     const closeDropdowns = useRef(null)
     const closeMediaDropdown = useRef(null)
     const {toggleMobileNavbarFunction} = useAllContext();
      const pathname = usePathname();
-     const [openEvent, setOpenEvent] = useState(false);
-     const [openMedia, setOpenMedia] = useState(false)
 
        // Close when clicking outside
   useEffect(() => {
@@ -31,16 +30,6 @@ const NavigationBar = () => {
     };
   }, []);
 
-       const toggleOpenEventLink = () => {
-        setOpenMedia(false)
-        setOpenEvent((prev) => !prev)
-     }
-
-     const toggleOpenMediaLink = () => {
-        setOpenEvent(false)
-        setOpenMedia((prev) => !prev)
-     }
-
     return(
         <div className="w-full px-[16px] md:px-[20px] py-[24px]">
         <nav className="max-w-[1280px] mx-auto flex justify-between items-center md:px-[32px] ">
@@ -58,24 +47,20 @@ const NavigationBar = () => {
              <div className="hidden md:flex flex-row justify-between text-[16px] text-[#C2C7D0] items-center space-x-[40px]">
                <Link href="/"  className={`${pathname==="/" ? "text-[#fff] font-[600]" : ""} navLink`}>Home</Link>
                   
-                  <Link href="/thribe" className={`${pathname==="/" ? "text-[#fff] font-[600]" : ""} navLink`}>How it works</Link>
+                  <Link href="/" className={`${pathname==="/" ? "text-[#fff] font-[600]" : ""} navLink`}>How it works</Link>
 
-                  <Link href="/" className={`${pathname==="/shop" ? "text-[#fff] font-[600]" : ""} navLink`}>FAQ</Link>
+                  <Link href="/Faq" className={`${pathname==="/shop" ? "text-[#fff] font-[600]" : ""} navLink`}>FAQ</Link>
              </div>
 
-             <div className="flex space-x-[12px] text-[16px] font-[700] leading-none">
+             <div className="hidden lg:block flex space-x-[12px] text-[16px] font-[700] leading-none">
                 <button className="w-[169px] h-[52px] rounded-[16px] text-[#fff] border border-[#BABDC1] cursor-pointer">Report a scam</button>
                 <button className="w-[169px] h-[52px] rounded-[16px] text-[#000] bg-[#fff] cursor-pointer">Verify account</button>
              </div>
 
-                {/* <div className="flex w-[30px] md:w-[152px] justify-between items-center ">
-                  <Link href="/#price">
-                <Button name="Join Us" classname="w-[101px] h-[47px] md:w-[141px] bg-[#107269] hidden md:block"/>
-                </Link>
-                <div className="relative w-[24px] h-[24px]" onClick={toggleMobileNavbarFunction}>
-                <Image src="/img/open_menu_white.png" fill alt="thribe community menu option" className="object-center md:hidden shrink-0" />
+                <div className="relative w-[24px] h-[24px] md:hidden" onClick={toggleMobileNavbarFunction} >
+                     <Menu size={20} className="text-[#fff]"/>   
                 </div>
-                </div> */}
+                
         </nav>
         </div>
     )

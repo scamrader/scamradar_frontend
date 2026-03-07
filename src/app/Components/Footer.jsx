@@ -49,10 +49,10 @@ const Footer = () => {
             <div className="w-full lg:w-[620px] space-y-[40px] lg:space-y-[205px]">
                 {/* links */}
                 <div className="flex space-x-[41px] text-[#4C545F] leading-[1.4]">
-                    <Link href="#">About</Link>
-                    <Link href="#">FAQ</Link>
+                    <Link href="/">About</Link>
+                    <Link href="/Faq">FAQ</Link>
                     <Link href="#">how it works</Link>
-                    <Link href="#">Legal</Link>
+                    <Link href="/legal/privacy-policy">Legal</Link>
                 </div>
 
                 <div className="flex flex-col lg:flex-row space-y-[40px] lg:space-x-[170px]">
