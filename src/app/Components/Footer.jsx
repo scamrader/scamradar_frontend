@@ -5,22 +5,22 @@ import Link from "next/link";
 const Footer = () => {
     return(
         <footer className="w-full font-outfit">
-        <section className="w-[1280px] mx-auto flex space-x-[40px]">
-            <div className="w-[620px]"> 
-                <div className="relative w-[168px] h-[43px]">
+        <section className="max-w-[1280px] mx-auto flex flex-col lg:flex-row space-y-[40px] lg:space-x-[40px] px-[16px] xl:px-0">
+            <div className="w-full lg:w-[620px]"> 
+                <div className="relative w-[154] lg:w-[168px] h-[43px]">
                     <Image src="/logo.png" fill alt="scamrader logo" />
                 </div>
-                <p className="leading-[1.4] w-[420px] mt-[32px] mb-[16px] text-[#4C545F]">
+                <p className="leading-[1.4] w-full lg:w-[420px] mt-[32px] mb-[16px] text-[#4C545F]">
                 Scamrader is the first real-time scam intelligence
                 platform that helps people verify accounts before sending money and prevent financial fraud.
                 </p>
 
                 <div className="flex space-x-[12px] items-center">
-                    <span className="text-[#1C2532] text-[12px] leading-[1.5]">Learn about scamrader</span>
+                    <span className="text-[#1C2532] text-[12px] leading-[1.5] font-[600]">Learn about scamrader</span>
                     <div className="bg-[#1C2532] w-[10px] h-[10px] rounded-full"></div>
                 </div>
 
-                <div className="mt-[120px] flex space-x-[10px]">
+                <div className="mt-[40px] lg:mt-[120px] flex space-x-[10px]">
                     <SocialIcons
                         cssClass="w-[11px] h-[18px]"
                         imgUrl="/img/social1.png"
@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="w-[620px] space-y-[205px]">
+            <div className="w-full lg:w-[620px] space-y-[40px] lg:space-y-[205px]">
                 {/* links */}
                 <div className="flex space-x-[41px] text-[#4C545F] leading-[1.4]">
                     <Link href="#">About</Link>
@@ -55,7 +55,7 @@ const Footer = () => {
                     <Link href="#">Legal</Link>
                 </div>
 
-                <div className="flex space-x-[170px]">
+                <div className="flex flex-col lg:flex-row space-y-[40px] lg:space-x-[170px]">
                     <div>
                         <h3 className="leading-[1.1] font-[500] text-[18px] text-[#1C2532]">Contact Us</h3>
                         <div className="text-[#4C545F] leading-[1.6] mt-[16px]">
@@ -74,7 +74,7 @@ const Footer = () => {
                 </div>
             </div>
         </section>
-         <div className="mt-[64px] max-w-[1280px] mx-auto text-[#4C545F] leading-[1.4] text-[12px] border border-x-0 border-t-[#DFDFDF] border-b-0 py-[64px] text-center">
+         <div className="mt-[41px] lg:mt-[64px] max-w-[1280px] mx-auto text-[#4C545F] leading-[1.4] text-[12px] border border-x-0 border-t-[#DFDFDF] border-b-0 py-[41px] lg:py-[64px] text-center">
             © 2025 - Copyright All Rights reserved
             </div>
         </footer>
