@@ -7,10 +7,15 @@ import MediumRiskContent from "./MediumRiskContent";
 const VerifyAccountModal = ({ isOpen, setIsOpen }) => {
     const [loading, setLoading] = useState(true);
 
+    const closeModal = () => {
+       setIsOpen(false)
+       setLoading(false)
+    }
+
      useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
-    }, 3000) 
+    }, 7000) 
 
     return () => clearTimeout(timer)
   }, [])
@@ -19,6 +24,7 @@ const VerifyAccountModal = ({ isOpen, setIsOpen }) => {
     const handleEsc = (e) => {
       if (e.key === "Escape") {
         setIsOpen(false)
+        setLoading(false)
       }
     }
 

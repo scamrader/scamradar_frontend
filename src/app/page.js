@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import NavigationBar from "./Components/Navigation";
+import MobileNav from "./components/MobileNav";
 import HowScamraderWorksList from "./Components/HowScamraderWorksList";
 import WhatYouCanDoList from "./Components/WhatYouCanDoList";
 import UseCase from "./Components/UseCase"
@@ -14,7 +15,8 @@ export default function Home() {
   return (
     <main>
       <NavigationBar />
-      <section className="max-w-[1280px] mx-auto pt-[90px] pb-[40px]">
+      <MobileNav />
+      {/* <section className="max-w-[1280px] mx-auto pt-[90px] pb-[40px]">
         <div className="font-clash">
           <h1 className="font-[600] text-[80px] leading-[1.5] tracking-[-0.02em]">Don&rsquo;t get scammed.</h1>
           <h3 className="text-[80px] leading-[1.5] tracking-[-0.02em]">Verify first.</h3>
@@ -50,15 +52,15 @@ export default function Home() {
 
       <section className="bg-[#E9ECD9] w-full h-[84px]">
 
-      </section>
+      </section> */}
 
       {/* how scammers works */}
-      <section className="max-w-[1280px] mx-auto lg:py-[112px] flex justify-between">
+      {/* <section className="max-w-[1280px] mx-auto lg:py-[112px] flex justify-between">
         <div className="w-[780px]">
           <h2 className="font-[600] font-clash text-[48px] leading-[1.3] tracking-[-0.02] text-[#1C2532]">How Scamrader Works</h2>
-          <div className="mt-[40px] space-y-[80px]">
+          <div className="mt-[40px] space-y-[80px]"> */}
             {/* flex1 */}
-            <div className="w-full flex justify-between">
+            {/* <div className="w-full flex justify-between">
               <HowScamraderWorksList
                 numbering="1"
                 text="Paste an account number before sending money."
@@ -85,9 +87,9 @@ export default function Home() {
             </div>
 
           </div>
-        </div>
+        </div> */}
 
-            <div className="relative w-[449px] h-[472px]">
+            {/* <div className="relative w-[449px] h-[472px]">
              <Image
                 src="/img/howscamraderworks.svg"
                 alt="Banner"
@@ -96,10 +98,10 @@ export default function Home() {
               />
           </div>
 
-      </section>
+      </section> */}
 
       {/* what you can do */}
-      <section className="bg-[#F5F5F5]">
+      {/* <section className="bg-[#F5F5F5]">
       <section className="lg:py-[120px] max-w-[1280px] mx-auto bg-[#F5F5F5] space-y-[40px]">
         <div className="flex space-x-[40px] items-center"> 
           <h2 className="font-[600] font-clash leading-[1.5] tracking-[-0.02] text-[48px] text-[#0D1126]">What you can do.</h2>
@@ -138,10 +140,10 @@ export default function Home() {
                 <button className="w-[169px] h-[52px] rounded-[16px] text-[#fff] bg-[#0D1117] cursor-pointer">Verify account</button>
             </div>
       </section>
-      </section>
+      </section> */}
 
       {/* real life use case */}
-      <section className="bg-[#FBFEFF] py-[120px]">
+      {/* <section className="bg-[#FBFEFF] py-[120px]">
          <h2 className="font-[600] font-clash leading-[1.5] tracking-[-0.02] text-[48px] text-[#0D1126] text-center">What you can do.</h2>
         <p className="font-[600] font-clash leading-[1.5] tracking-[-0.02] text-[18px] text-[#0D1126] text-center">There are different scenarios</p>
         <section className="max-w-[1280px] mt-[100px] mx-auto flex space-x-[23px]">
@@ -167,16 +169,16 @@ export default function Home() {
           />
 
         </section>
-      </section>
+      </section> */}
 
       {/* frequently asked questions */}
-      <section className="py-[120px] space-y-[40px] max-w-[800px] mx-auto">
+      {/* <section className="py-[120px] space-y-[40px] max-w-[800px] mx-auto">
         <h2 className="text-center font-clash font-[600] leading-none text-[40px] text-[#0D1126]">Frequently Asked Questions (FAQ)</h2>
-       
+        */}
         {/* {
           faqList.map((list, i) => <div key={i}> <FaqBlock questions={list.question}  /></div>)
         } */}
-        <FaqContainer />
+        {/* <FaqContainer />
         <div className="text-center">
         <button className="w-[143px] h-[52px] rounded-[16px] text-[#0D1117] border border-[#BABDC1] cursor-pointer mx-auto">View more</button>
         </div>
@@ -195,7 +197,7 @@ export default function Home() {
                 <button className="w-[169px] h-[52px] rounded-[16px] text-[#fff] bg-transparent border border-[#BABDC1] cursor-pointer">Report a scam</button>
                 <button className="w-[169px] h-[52px] rounded-[16px] text-[#0D1117] bg-[#fff] cursor-pointer">Verify account</button>
              </div>
-      </section>
+      </section> */}
 
     </main>
   );

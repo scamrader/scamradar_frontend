@@ -5,7 +5,7 @@ import Link from "next/link";
 // import Button from "./Button";
 import { useAllContext } from "../context/allcontext";
 import { usePathname } from "next/navigation";
-// import { Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 
 
 
@@ -37,7 +37,7 @@ const NavigationBar = () => {
     return(
         <div className="w-full px-[16px] md:px-[40px] py-[24px] md:relative ">
         <nav className="tracking-[0.03] leading-[1.5] md:max-w-[1280px] mx-auto flex justify-between items-center">
-           <Link href="/" className="block relative w-[200px] h-[52px]">  
+           <Link href="/" className="block relative w-[140px] md:w-[200px] h-[36px] md:h-[52px]">  
            <Image
             src="/logo.png"
             alt="scamrader logo"
@@ -55,7 +55,7 @@ const NavigationBar = () => {
                 <Link href="/Faq">FAQ</Link>
              </div>
 
-             <div className="flex space-x-[12px] text-[16px] font-[700] leading-none">
+             <div className="flex space-x-[12px] text-[16px] font-[700] leading-none hidden md:block">
                <Link href="/auth/signup" className="">  
                 <button className="w-[169px] h-[52px] rounded-[16px] text-[#0D1117] border border-[#BABDC1] cursor-pointer">Report a scam</button>
                 </Link>
@@ -67,8 +67,7 @@ const NavigationBar = () => {
                  {/* <Button name="Contact Us" classname="w-[101px] h-[47px] md:w-[141px] bg-[#107269] hidden md:block"/> */}
                   </Link>
                 <div className="relative w-[24px] h-[24px] md:hidden" onClick={toggleMobileNavbarFunction} >
-                     {/* <Menu size={20} className="text-[#000]"/> */}
-                     hello
+                     <Menu size={20} className="text-[#000]"/>   
                 </div>
                 </div>
         </nav>
