@@ -8,13 +8,12 @@
     }
 
 const Step1 = () => {
-   
     return(
         <div>
             <div className="flex justify-between items-center">
             <div className="text-[#000]">
-            <h3 className="font-[600px] text-[32px]">Account details</h3>
-            <p>Give details of the account that scammed you</p>
+            <h3 className="font-[600] text-[24px] md:text-[32px]">Account details</h3>
+            <p className="text-[14px] md:text-[16px]">Give details of the account that scammed you</p>
             </div>
 
             <div className="text-[#515A6A] w-[60px] h-[60px] rounded-full border-[5px] border-[#D9EAED] flex items-center justify-center">50%</div>
@@ -34,7 +33,7 @@ const Step1 = () => {
                 <InputDiv label="Account number" type="text" placeholder="Enter account" />
                 <InputDiv label="Account name" type="text" placeholder="Enter name" />
                 <div className="mt-[30px]">
-                <button className="w-full h-[52px] rounded-[16px] bg-[#BABDC1] text-[#fff]">Continue</button>
+                <button className="w-full h-[52px] rounded-[16px] bg-[#BABDC1] text-[#fff] cursor-pointer hover:bg-[#000]">Continue</button>
                 </div>
 
             </form>
