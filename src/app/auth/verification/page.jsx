@@ -4,18 +4,18 @@ import PasswordInput from "../../Components/PasswordInput";
 
 const InputNumber = () => {
     return(
-         <input type="text" className="outline-none cursor-pointer w-[80px] h-[56px] rounded-[12px] border border-[#E9EAEB] text-center" placeholder="-"/>
+         <input type="text" className="outline-none cursor-pointer w-[53px] lg:w-[80px] h-[56px] rounded-[12px] border border-[#E9EAEB] text-center" placeholder="-"/>
     )
 }
 
 const Verification = () => {
     return(
-        <main className="w-full bg-[#F6F8F0] h-[100vh] pt-[40px]">
+        <main className="w-full lg:bg-[#F6F8F0] min:h-[100vh] pt-[40px]">
             <div className="relative w-[200px] h-[51px] mx-auto">
                 <Image src="/logo.png" alt="scamrader logo" fill />
             </div>
 
-            <section className="mt-[24px] bg-[#fff] rounded-[24px] p-[40px] max-w-[600px] mx-auto">
+            <section className="mt-[24px] bg-[#fff] rounded-[24px] p-[16px] lg:p-[40px] max-w-[600px] mx-auto">
                 <div className="w-full relative text-center">
                     <Image src="/img/left-arrow.png" width={7} height={15.8} alt="scamrader left arrow" className="absolute top-[5px] left-0" />
                     <h3 className="text-[18px] font-[600]">Verification</h3>
