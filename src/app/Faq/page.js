@@ -1,5 +1,6 @@
 import NavigationBar from "../Components/Navigation";
 import FaqContainer from "../Components/FaqContainer";
+import Footer from "../Components/Footer";
 import Image from "next/image";
 const Faq = () => {
     return(
@@ -50,8 +51,11 @@ const Faq = () => {
                 </div>
 
             </section>
+
+            <Footer />
            
         </main>
+        
     )
 }
 

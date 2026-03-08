@@ -1,5 +1,4 @@
 "use client"
-
 import { useState } from "react";
 import Image from "next/image";
 import NavigationBar from "./Components/Navigation";
@@ -9,6 +8,7 @@ import WhatYouCanDoList from "./Components/WhatYouCanDoList";
 import UseCase from "./Components/UseCase"
 import FaqContainer from "./Components/FaqContainer";
 import VerifyAccountModal from "./Components/VerifyModal";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
@@ -208,7 +208,7 @@ export default function Home() {
                 <button className="w-[50%] lg:w-[169px] h-[52px] rounded-[16px] text-[#0D1117] bg-[#fff] cursor-pointer">Verify account</button>
              </div>
       </section> 
-
+        <Footer />
     </main>
   );
 }

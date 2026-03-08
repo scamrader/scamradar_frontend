@@ -4,12 +4,12 @@ import PasswordInput from "../../Components/PasswordInput";
 
 const Login = () => {
     return(
-        <main className="w-full bg-[#F6F8F0] h-[100vh] pt-[40px]">
+        <main className="w-full lg:bg-[#F6F8F0] min:h-[100vh] pt-[40px]">
             <div className="relative w-[200px] h-[51px] mx-auto">
                 <Image src="/logo.png" alt="scamrader logo" fill />
             </div>
 
-            <section className="mt-[24px] bg-[#fff] rounded-[24px] p-[40px] max-w-[600px] mx-auto">
+            <section className="mt-[24px] bg-[#fff] rounded-[24px] p-[16px] lg:p-[40px] max-w-[600px] mx-auto">
                 <div>
                     <h4 className="font-[600] text-[28px] text-[#1F2937]">Login</h4>
                     <span className="text-[14px] text-[#697079]">Welcome back Thanau</span>
