@@ -6,7 +6,7 @@ const Step2 = () => {
         <div className="">
             <div className="flex justify-between items-center">
             <div className="text-[#000]">
-            <h3 className="font-[600px] text-[32px]">Evidence</h3> 
+            <h3 className="font-[600] text-[24px] lg:text-[32px]">Evidence</h3> 
         </div>
 
             <div className="text-[#515A6A] w-[60px] h-[60px] rounded-full border-[5px] border-[#015B6A] flex items-center justify-center">100%</div>
