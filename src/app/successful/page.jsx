@@ -30,7 +30,9 @@ export default function ReportLayout() {
                 <h6 className="text-[#1F2937] font-[500]">Report submitted successfully!</h6>
                 <p className="text-[#4C545F] leading-[1.5] text-[14px]">Thank you for reporting a scam case. This will help protect others.</p>
                 <div className="mt-[24px]">
+                <Link href="/report_scam/step1">
                 <button className="h-[44px] w-full text-[13px] text-[#fff] text-[#FFFFFF] rounded-[16px] bg-[#0D1117]">Report another account</button>
+                </Link>
                 </div>
             </div> 
             <Link href="/">

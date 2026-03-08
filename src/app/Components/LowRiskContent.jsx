@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const LowRiskContent = ({setIsOpen}) => {
     return(
-            <div className="w-full h-full p-[40px] space-y-[16px] text-[#4C545F]">
+            <div className="w-full h-full p-[16px] lg:p-[40px] space-y-[16px] text-[#4C545F]">
                 <div className="flex justify-between items-center">
                     <span className="font-[600] leading-none text-[18px] text-[#1F2937]">Search result</span>
                     <div onClick={() => setIsOpen(false)} className="w-[20px] h-[20px] relative cursor-pointer">

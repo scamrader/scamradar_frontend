@@ -1,3 +1,5 @@
+    import Link from "next/link"
+ 
  const InputDiv = ({label, placeholder, type}) => {
         return (
             <div>
@@ -33,7 +35,9 @@ const Step1 = () => {
                 <InputDiv label="Account number" type="text" placeholder="Enter account" />
                 <InputDiv label="Account name" type="text" placeholder="Enter name" />
                 <div className="mt-[30px]">
+                <Link href="/report_scam/step2">
                 <button className="w-full h-[52px] rounded-[16px] bg-[#BABDC1] text-[#fff] cursor-pointer hover:bg-[#000]">Continue</button>
+                </Link>
                 </div>
 
             </form>

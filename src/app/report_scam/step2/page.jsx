@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Step2 = () => {
    
@@ -58,7 +59,9 @@ const Step2 = () => {
                 </div>
 
                 <div className="mt-[30px]">
+                <Link href="/successful">
                 <button className="cursor-pointer w-full h-[52px] rounded-[16px] bg-[#BABDC1] hover:bg-[#000] text-[#fff]">Report account</button>
+                </Link>
                 </div>
 
             </form>
