@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import NavigationBar from "./Components/Navigation";
-import MobileNav from "./components/MobileNav";
+import MobileNav from "./Components/MobileNav";
 import HowScamraderWorksList from "./Components/HowScamraderWorksList";
 import WhatYouCanDoList from "./Components/WhatYouCanDoList";
 import UseCase from "./Components/UseCase"

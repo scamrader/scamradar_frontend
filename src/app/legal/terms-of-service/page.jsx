@@ -10,7 +10,7 @@ const TermsOfUse = () => {
                 
             </div>
  
-            <div className="w-full text-[20px] md:w-[690px] space-y-[24px] sm:space-y-[40px] text-secondaryColor leading-[1.5] tracking-[1%]">
+            <div className="w-full text-[20px] md:w-[690px] space-y-[24px] sm:space-y-[40px] text-s econdaryColor leading-[1.5] tracking-[1%]">
                 
                 <div>
                    <h2 className="font-[700]">1. Acceptance of Terms</h2>
