@@ -1,11 +1,13 @@
 import NavigationBar from "../Components/Navigation";
 import FaqContainer from "../Components/FaqContainer";
+import MobileNav from "../Components/MobileNav";
 import Footer from "../Components/Footer";
 import Image from "next/image";
 const Faq = () => {
     return(
         <main>
             <NavigationBar />
+            <MobileNav />
             <section className="pt-[60px] lg:pt-[128px] pb-[40px] lg:pb-[80px] px-[16px] max-w-[1280px] mx-auto ">
                 <h2 className="font-[600] text-[48px] lg:text-[80px] leading-[1.2] tracking-[0.01em] text-center">FAQ</h2>
                 <h3 className="leading-[1.2] tracking-[0.01em] text-center text-[24px] lg:text-[32px] font-[600]">Frequently Asked Questions </h3>
