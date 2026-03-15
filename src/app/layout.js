@@ -40,6 +40,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${outfit.variable} ${clashDisplay.variable} font-[400] antialiased`}>
+      {/* <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script> */}
       <body
         className={`${outfit.variable}`}
       >

@@ -6,7 +6,7 @@ const Footer = () => {
     return(
         <footer className="w-full font-outfit">
         <section className="max-w-[1280px] mx-auto flex flex-col lg:flex-row space-y-[40px] lg:space-x-[40px] px-[16px] xl:px-0">
-            <div className="w-full lg:w-[620px]"> 
+            <div className="w-full lg:w-[50%]"> 
                 <div className="relative w-[154] lg:w-[168px] h-[43px]">
                     <Image src="/logo.png" fill alt="scamrader logo" />
                 </div>
@@ -46,9 +46,9 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="w-full lg:w-[620px] space-y-[40px] lg:space-y-[205px]">
+            <div className="w-full lg:w-[50%] space-y-[40px] lg:space-y-[205px]">
                 {/* links */}
-                <div className="flex space-x-[41px] text-[#4C545F] leading-[1.4]">
+                <div className="w-full flex justify-between text-[#4C545F] leading-[1.4]">
                     <Link href="/">About</Link>
                     <Link href="/Faq">FAQ</Link>
                     <Link href="#">how it works</Link>
@@ -59,15 +59,15 @@ const Footer = () => {
                     <div>
                         <h3 className="leading-[1.1] font-[500] text-[18px] text-[#1C2532]">Contact Us</h3>
                         <div className="text-[#4C545F] leading-[1.6] mt-[16px]">
-                        <p>+234 (810) 1075-795</p>
+                        {/* <p>+234 (810) 1075-795</p> */}
                         <p>hello@scamrader.com</p>
                         </div>
                     </div>
                      <div>
                         <h3 className="leading-[1.1] font-[500] text-[18px] text-[#1C2532]">Location</h3>
                         <div className="text-[#4C545F] leading-[1.6] mt-[16px]">
-                        <p>Lagos, Nigeria</p>
-                        <p>Office 4, Sabo, Yaba. 22/2/5, </p>
+                        {/* <p></p> */}
+                        <p>Office 4, Sabo, Yaba. 22/2/5,Lagos, Nigeria </p>
                         </div>
                     </div>
 

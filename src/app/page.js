@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import useSWR from 'swr'
 import Image from "next/image";
 import NavigationBar from "./Components/Navigation";
 import MobileNav from "./Components/MobileNav";
@@ -10,8 +11,21 @@ import FaqContainer from "./Components/FaqContainer";
 import VerifyAccountModal from "./Components/VerifyModal";
 import Footer from "./Components/Footer";
 
+// const fetcher = (...args) => fetch(...args).then((res) => res.json())
+
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [accountNumber, setAccountNumber] = useState('');
+
+  const onChangeAccountNumber = (e) => {
+    setAccountNumber(e.target.value)
+  }
+
+  const onClickVerifyButton = (e) => {
+    e.preventDefault();
+    setIsOpen(true)
+  }
+
   return (
     <main>
       <NavigationBar />
@@ -35,13 +49,19 @@ export default function Home() {
           <p className="text-[18px] max-w-[432px] font-[400]">
             Check any account before sending money or making payments, report scams, and protect yourself in seconds.
           </p>
-          <div className="p-[12px] lg:p-0 min-h-[52px] max-w-[432px] bg-[#ECECF9] rounded-[16px] relative">
-            <input type="text" placeholder="Enter account number" className="pl-[10px] pr-[112px] w-full h-[52px] rounded-[16px] outline-none bg-[#ECECF9]" />
-          <button onClick={() => setIsOpen(true)} className="font-[700] leading-none text-[#FFFFFF] rounded-[16px] w-full md:w-[110px] h-[52px] outline-none relative lg:absolute top-0 right-0 bg-[#0D1117] border border-[#BABDC1] cursor-pointer">
+          <form className="p-[12px] lg:p-0 min-h-[52px] max-w-[432px] bg-[#ECECF9] rounded-[16px] relative">
+            <input 
+            onChange={onChangeAccountNumber} 
+            value={accountNumber}
+            type="text" 
+            placeholder="Enter account number" 
+            className="pl-[10px] pr-[112px] w-full h-[52px] rounded-[16px] outline-none bg-[#ECECF9]" 
+            />
+          <button onClick={onClickVerifyButton} className="font-[700] leading-none text-[#FFFFFF] rounded-[16px] w-full md:w-[110px] h-[52px] outline-none relative lg:absolute top-0 right-0 bg-[#0D1117] border border-[#BABDC1] cursor-pointer">
             Verify
           </button>
-          </div>
-          <VerifyAccountModal isOpen={isOpen} setIsOpen={setIsOpen} />
+          </form>
+          <VerifyAccountModal isOpen={isOpen} setIsOpen={setIsOpen} accountNumber />
           <p className="text-[18px] max-w-[432px] font-[400]">
             Scammers move fast. We move faster.
           </p>

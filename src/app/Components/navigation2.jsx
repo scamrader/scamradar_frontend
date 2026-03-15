@@ -2,7 +2,6 @@
 import { useState, useRef, useEffect} from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./Button";
 import { useAllContext } from "../context/allcontext";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
